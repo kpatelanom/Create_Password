@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto password generate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/807ffeef66.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container main-box">
+        <div class="box">
+            <h2 style="text-align: center;padding-bottom: 10px; color:white;">Auto Password Generate</h2>
+            <div class="input-group mb-3">
+                <input type="text" id="result" class="form-control" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="Clickboard" style="cursor: pointer;">Copy to Clickboard</span>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Password length</span>
+                </div>
+                <input type="number" class="form-control length" id="password_length" aria-describedby="basic-addon3" value="20">
+            </div>
+            <div class="row">
+                <div class="col width50">
+
+                    <h4><span class="badge badge-secondary">Lowercase</span></h4>
+
+                </div>
+                <div class="col">
+                    <input type="checkbox" class="custom" id="lowercase" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col width50">
+
+                    <h4><span class="badge badge-secondary">Uppercase</span></h4>
+
+                </div>
+                <div class="col">
+                    <input type="checkbox" class="custom" id="uppercase" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col width50">
+
+                    <h4><span class="badge badge-secondary">Number</span></h4>
+
+                </div>
+                <div class="col">
+                    <input type="checkbox" class="custom" id="number" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col width50">
+
+                    <h4><span class="badge badge-secondary">Symbol</span></h4>
+
+                </div>
+                <div class="col">
+                    <input type="checkbox" class="custom" id="symbol" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+            <button id="generate" type="button" class="btn btn-primary btn-lg" style="margin-left:35%">Generate Password</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
